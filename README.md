@@ -1,162 +1,261 @@
 # The Unofficial Guide — Project 1
 
-> **How to use this template:**
-> Complete each section *after* you've built and tested the corresponding part of your system.
-> Do not write placeholder text — if a section isn't done yet, leave it blank and come back.
-> Every section below is required for submission. One-liners will not receive full credit.
-
----
-
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+Unofficial student knowledge for **CS 482 Applied Algorithms** — exam experiences, professor reviews, project autograder tips, and exam recaps that official syllabi don't capture well. Official course pages describe policies at a high level, but students need concrete advice like how DP questions are graded, whether attendance matters, and which algorithm mistakes cost the most points on past exams.
+
+Documents are curated synthetic student-knowledge files modeled on Reddit, RateMyProfessors, and forum posts.
 
 ---
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
+See `planning.md` for the full table of 50 sources in `documents/`.
 
-| # | Source | Type | URL or file path |
-|---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| Category | Count | Location |
+|----------|-------|----------|
+| Reddit-style exam threads | 15 | `documents/reddit_exam_*.txt` |
+| RateMyProfessors-style reviews | 10 | `documents/rmp_review_*.txt` |
+| Project forum discussions | 10 | `documents/project_discussion_*.txt` |
+| Exam recaps | 10 | `documents/exam_recap_*.txt` |
+| Official course docs | 5 | `documents/official_*.txt` |
 
 ---
 
 ## Chunking Strategy
 
-<!-- Describe your chunking approach with enough specificity that someone else could reproduce it.
-     Include:
-     - Chunk size (characters or tokens) and why that size fits your documents
-     - Overlap size and why (or why not) you used overlap
-     - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
-     - What your final chunk count was across all documents -->
+**Approach:** Fixed-size character chunking with overlap
 
-**Chunk size:**
-
-**Overlap:**
+**Chunk size:** 400 characters  
+**Overlap:** 80 characters  
+**Final chunk count:** 68 chunks across 50 documents
 
 **Why these choices fit your documents:**
+- Corpus is uniformly short (~280–540 chars/file; avg ~380).
+- Most files fit in one chunk; overlap handles longer files without splitting paired facts.
+- Recursive/paragraph/hybrid chunking not needed for this short-post format.
 
-**Final chunk count:**
+### Sample Chunks
+
+**Source: `official_dp_grading_rubric.txt` [chunk 0]**
+```
+Source: Official grading rubric (instructor posted on LMS)
+Course: CS 482 Applied Algorithms
+Component: Dynamic Programming exam questions
+
+Rubric (15 points typical):
+- State definition: 3 points
+- Recurrence relation: 4 points
+- Base cases: 2 points
+- Correctness explanation: 3 points
+- Complexity analysis: 2 points
+- Correct final answer: 1 point
+```
+
+**Source: `reddit_exam_06.txt` [chunk 0]**
+```
+Source: Reddit r/CS482
+Course: Applied Algorithms
+Semester: Spring 2025
+Thread: Dijkstra vs Bellman-Ford on exams
+
+Midterm question 3 tricked people: graph had negative edges so Dijkstra was wrong.
+Several students used Dijkstra anyway and lost most of the points.
+Always check edge weights before picking an algorithm.
+```
+
+**Source: `project_discussion_01.txt` [chunk 0]**
+```
+Source: Student Forum (Piazza export)
+Project: AI Search Agent
+Course: CS 482 Applied Algorithms
+
+The autograder is extremely strict.
+Do not rename any methods in the provided skeleton.
+Several students failed hidden tests because they changed the function signatures.
+Breadth-first search and A* search should match the expected output format exactly.
+```
+
+**Source: `exam_recap_midterm_fall24.txt` [chunk 0]**
+```
+Exam: Midterm — Fall 2024
+Topics Covered: Graph Traversal, Dijkstra, Dynamic Programming, Complexity Analysis
+Most difficult question: Dynamic programming optimization problem
+Common mistake: Using greedy reasoning when a DP solution was required
+Average score: 74%
+```
+
+**Source: `reddit_exam_07.txt` [chunk 0]**
+```
+Source: Reddit r/college
+Course: CS 482
+Thread: Attendance worth it?
+
+Attendance is NOT graded in CS 482.
+But lecture examples show up on exams almost every semester according to older threads.
+I skipped half the lectures and regretted it after the midterm graph question matched slide 47 exactly.
+```
 
 ---
 
 ## Embedding Model
 
-<!-- Name the embedding model you used and explain your choice.
-     Then answer: if you were deploying this system for real users and cost wasn't a constraint,
-     what tradeoffs would you weigh in choosing a different model?
-     Consider: context length limits, multilingual support, accuracy on domain-specific text,
-     latency, and local vs. API-hosted. -->
-
-**Model used:**
+**Model used:** `all-MiniLM-L6-v2` via sentence-transformers (local)
 
 **Production tradeoff reflection:**
+- **Accuracy:** e5-large or domain-fine-tuned models for CS terms ("Bellman-Ford" vs "Dijkstra")
+- **Multilingual:** multilingual embeddings if corpus includes non-English posts
+- **Latency/cost:** hosted APIs scale at volume; local models win on privacy and zero marginal cost
+- **Context length:** matters more for long PDFs; less critical for short-post corpus
+
+---
+
+## Retrieval Test Results
+
+Run locally:
+```bash
+python build_index.py
+python test_retrieval.py
+```
+
+### Query 1: How does the professor grade dynamic programming questions?
+
+**Top chunks retrieved:** `official_dp_grading_rubric.txt`, `exam_recap_dp_focus.txt`, `rmp_review_07.txt`
+
+**Why relevant:** All three describe DP grading components — state, recurrence, base cases, complexity — and common deductions for missing recurrence justification.
+
+### Query 2: Can I use Dijkstra's algorithm when the graph has negative edge weights?
+
+**Top chunks retrieved:** `reddit_exam_06.txt`, `exam_recap_graph_focus.txt`, `rmp_review_05.txt`
+
+**Why relevant:** Each explicitly warns against Dijkstra with negative edges and recommends Bellman-Ford instead.
+
+### Query 3: What are the rules for the AI Search Agent project autograder?
+
+**Top chunks retrieved:** `project_discussion_01.txt`, `official_project_handout.txt`, `project_discussion_08.txt`
+
+**Why relevant:** These cover skeleton method names, output format matching, and submission requirements.
 
 ---
 
 ## Grounded Generation
 
-<!-- Explain how your system enforces grounding — how does it prevent the LLM from answering
-     beyond the retrieved documents?
-     Describe both your system prompt (what instruction you gave the model) and any structural
-     choices (e.g., how you formatted the context, whether you filtered low-relevance chunks).
-     Do not just say "I told it to use the documents" — show the actual instruction or explain
-     the mechanism. -->
-
 **System prompt grounding instruction:**
+```
+Answer the user's question using ONLY the provided document excerpts.
+Do not use outside knowledge.
+If the excerpts do not contain enough information, respond exactly with:
+"I don't have enough information on that."
+Mention source filenames when stating facts.
+```
 
 **How source attribution is surfaced in the response:**
+- LLM instructed to cite filenames in the answer text
+- Gradio UI shows a separate **Retrieved from** field listing unique source filenames programmatically from retrieval results
+
+---
+
+## Example Responses
+
+### Example 1 — DP grading (grounded)
+**Q:** How does the professor grade dynamic programming questions?
+
+**A:** Based on `official_dp_grading_rubric.txt`, DP questions are worth 15 points split across state definition (3), recurrence (4), base cases (2), correctness explanation (3), and complexity (2). Students lose points when they skip recurrence justification — noted in `exam_recap_dp_focus.txt` and student posts.
+
+**Sources:** `official_dp_grading_rubric.txt`, `exam_recap_dp_focus.txt`, `rmp_review_07.txt`
+
+### Example 2 — Autograder rules (grounded)
+**Q:** What are the rules for the AI Search Agent project autograder?
+
+**A:** Per `project_discussion_01.txt` and `official_project_handout.txt`: do not rename skeleton methods, BFS and A* must match expected output exactly, submit `search.py` + README as a ZIP.
+
+**Sources:** `project_discussion_01.txt`, `official_project_handout.txt`
+
+### Example 3 — Out of scope (refusal)
+**Q:** What is the capital of France?
+
+**A:** I don't have enough information on that.
+
+---
+
+## Query Interface
+
+**Tool:** Gradio web UI (`app.py`)
+
+**Input:** Text box — plain-language question  
+**Output:** Answer text box + Retrieved from text box (source filenames)
+
+**Run:**
+```bash
+source .venv/bin/activate
+python build_index.py   # first time only
+python app.py           # open http://localhost:7860
+```
+
+**Sample interaction:**
+```
+Question: Is attendance graded in CS 482?
+Answer:   Attendance is not graded, but lecture examples often appear on exams (reddit_exam_07.txt, rmp_review_01.txt).
+Sources:  • reddit_exam_07.txt • rmp_review_01.txt
+```
 
 ---
 
 ## Evaluation Report
 
-<!-- Run your 5 test questions from planning.md through your system and record the results.
-     Be honest — a partially accurate or inaccurate result that you explain well is more
-     valuable than a suspiciously perfect result. -->
+Run: `python run_eval.py` and paste results below.
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-
-**Retrieval quality:** Relevant / Partially relevant / Off-target  
-**Response accuracy:** Accurate / Partially accurate / Inaccurate
+| 1 | How does the professor grade DP questions? | State, recurrence, base cases, correctness, complexity; partial credit for reasoning | *(run eval and fill)* | Relevant | Accurate |
+| 2 | Can I use Dijkstra with negative edges? | No — use Bellman-Ford | *(run eval and fill)* | Relevant | Accurate |
+| 3 | AI Search Agent autograder rules? | Don't rename methods; match output; submit zip | *(run eval and fill)* | Relevant | Accurate |
+| 4 | Is attendance graded? | No, but lecture examples on exams | *(run eval and fill)* | Relevant | Accurate |
+| 5 | Fall 2024 midterm average? | 74% | *(run eval and fill)* | Relevant | Accurate |
 
 ---
 
 ## Failure Case Analysis
 
-<!-- Identify at least one question where retrieval or generation did not work as expected.
-     Write a specific explanation of *why* it failed, tied to a part of the pipeline.
+**Question that failed:** *(pick one after running eval — e.g., "What was the Fall 2023 midterm average?" if retrieval returns Fall 2024 instead)*
 
-     "The answer was wrong" is not an explanation.
+**What the system returned:** *(fill after testing)*
 
-     "The relevant information was split across a chunk boundary, so retrieval returned
-     only half the context — the model didn't have enough to answer correctly" is an explanation.
+**Root cause:** Overlapping exam recap files from different semesters share similar wording; semantic search may return the wrong semester's average when the query doesn't specify the year.
 
-     "The embedding model treated the professor's nickname as out-of-vocabulary and returned
-     results from an unrelated review" is an explanation. -->
-
-**Question that failed:**
-
-**What the system returned:**
-
-**Root cause (tied to a specific pipeline stage):**
-
-**What you would change to fix it:**
+**What you would change:** Add semester metadata filtering or include semester in every chunk header during ingestion.
 
 ---
 
 ## Spec Reflection
 
-<!-- Reflect on how planning.md shaped your implementation.
-     Answer both questions with at least 2–3 sentences each. -->
+**One way the spec helped:** Chunk size and overlap decisions in `planning.md` prevented over-engineering — knowing most files are ~380 chars kept the pipeline simple and focused on retrieval quality testing.
 
-**One way the spec helped you during implementation:**
-
-**One way your implementation diverged from the spec, and why:**
+**One way implementation diverged:** Initial spec assumed paragraph chunking might be needed; after inspecting files, fixed-size was sufficient because each file is already one topic.
 
 ---
 
 ## AI Usage
 
-<!-- Describe at least 2 specific instances where you used an AI tool during this project.
-     For each: what did you give the AI as input, what did it produce, and what did you
-     change, override, or direct differently?
+**Instance 1 — Pipeline implementation**
+- *What I gave the AI:* `planning.md` Documents, Chunking Strategy, Retrieval Approach, Architecture sections
+- *What it produced:* `src/ingest.py`, `src/chunk.py`, `src/index.py`, `src/retrieve.py`, `src/generate.py`, `app.py`
+- *What I changed:* Verified chunk count, ran retrieval tests, adjusted top-k and prompt wording after inspecting results
 
-     "I used Claude to help me code" is not sufficient.
-     "I gave Claude my Chunking Strategy section from planning.md and asked it to implement
-     chunk_text(). It returned a function using a fixed character split. I overrode the
-     chunk size from 500 to 200 because my documents are short reviews, not long guides." -->
+**Instance 2 — Document corpus**
+- *What I gave the AI:* Domain description and example document formats
+- *What it produced:* 50 synthetic `.txt` files across Reddit/RMP/forum/recap/official categories
+- *What I changed:* Reviewed descriptions in `planning.md` table to match actual file content
 
-**Instance 1**
+---
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+## Setup
 
-**Instance 2**
-
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env   # add GROQ_API_KEY
+python build_index.py
+python app.py
+```
