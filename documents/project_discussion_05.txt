@@ -1,0 +1,11 @@
+Source: Student Forum
+Project: AI Search Agent
+Semester: Fall 2024
+
+Common bug: not tracking visited nodes in BFS, infinite loops on cyclic graphs.
+
+Another bug: forgetting to reconstruct the path after search completes.
+
+Print debugging won't help on autograder — write unit tests locally.
+
+Sample maps are in the starter repo under tests/maps/.

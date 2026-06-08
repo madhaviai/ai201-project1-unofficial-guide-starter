@@ -1,0 +1,20 @@
+Source: Official course syllabus
+Course: CS 482 Applied Algorithms
+Instructor: Dr. Elena Chen
+Department: Computer Science
+
+Grading:
+- Homework: 30%
+- Programming Project (Search Agent): 25%
+- Midterm Exam: 20%
+- Final Exam: 25%
+
+Exam policies:
+Closed book, closed electronic devices.
+One handwritten 8.5x11 inch notes sheet allowed (both sides).
+
+Attendance: Not required but strongly recommended.
+
+Learning outcomes:
+Students will analyze algorithm correctness and complexity.
+Students will implement graph and dynamic programming solutions.

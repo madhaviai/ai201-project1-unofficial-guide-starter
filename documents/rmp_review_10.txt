@@ -1,0 +1,12 @@
+Source: RateMyProfessors
+Professor: Dr. Elena Chen
+Course: CS 482
+Rating: 4/5
+
+One coding project (search agents) plus written exams.
+
+Project is 25% of grade — don't treat it as optional.
+
+BFS and A* must match reference output byte-for-byte.
+
+Great for grad school prep if you engage with proofs.

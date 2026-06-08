@@ -1,0 +1,19 @@
+Source: Unofficial DP cram sheet
+Course: CS 482 Applied Algorithms
+Focus: Dynamic Programming exams
+
+Topics Covered:
+- State definition
+- Recurrence relation
+- Base cases
+- Pseudocode
+- Time and space complexity
+
+Most difficult question type:
+New problem requiring you to design state (not a memorized template).
+
+Common mistake:
+Students forget to justify the recurrence relation.
+
+Partial credit:
+Available for correct state + wrong final numeric answer.

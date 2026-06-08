@@ -1,0 +1,10 @@
+Source: Reddit r/CS482
+Course: Applied Algorithms
+Semester: Fall 2024
+Thread: Partial credit rant (positive)
+
+Shoutout to Dr. Chen — partial credit is real if you show your recurrence and explain a failed greedy attempt.
+
+I got 8/15 on a DP question because I wrote the wrong final answer but my state transition was mostly correct.
+
+Don't leave blank pages. Write something coherent even if you're stuck.

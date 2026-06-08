@@ -1,0 +1,17 @@
+Source: Unofficial graph cram sheet
+Course: CS 482
+Focus: Graph algorithm exams
+
+Topics Covered:
+- BFS shortest paths (unweighted)
+- Dijkstra (non-negative edges)
+- Bellman-Ford (negative edges allowed)
+- Complexity O(V+E) vs O(E log V)
+
+Most difficult question type:
+Pick correct algorithm and justify choice.
+
+Common mistake:
+Running Dijkstra when negative edges present.
+
+Average points lost on this mistake: 8-12 per exam.

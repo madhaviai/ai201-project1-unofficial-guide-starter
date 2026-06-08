@@ -1,0 +1,18 @@
+Source: Student study guide
+Course: CS 482
+Exam: Final — Fall 2024
+
+Topics Covered:
+- All midterm topics plus Bellman-Ford
+- Matrix chain multiplication
+- Shortest paths with constraints
+
+Most difficult question:
+Multi-step DP with three-dimensional state.
+
+Common mistake:
+Forgetting base cases in recurrence.
+
+Average score: 71%
+
+Note: One question reused a lecture example with different weights.

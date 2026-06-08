@@ -1,0 +1,16 @@
+Source: Reddit r/CS482
+Course: Applied Algorithms (CS 482)
+Semester: Fall 2024
+Thread: Midterm debrief
+
+The midterm wasn't impossible but definitely harder than the homework.
+
+About 40% of the exam was graph algorithms.
+
+There was one question on Dijkstra and one on dynamic programming.
+
+The professor cared a lot about explaining why the algorithm was correct.
+
+Several students lost points because they only wrote the final answer and did not explain their reasoning.
+
+Complexity analysis was required on every question.

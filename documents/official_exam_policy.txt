@@ -1,0 +1,12 @@
+Source: Official exam policy (syllabus appendix)
+Course: CS 482 Applied Algorithms
+
+All exam answers must include:
+1. Algorithm description or pseudocode
+2. Correctness justification (brief proof or invariant argument)
+3. Time complexity analysis
+4. Space complexity analysis when non-trivial
+
+Points may be deducted if only the final numeric answer is provided.
+
+Regrade requests must be submitted within one week of grade release with written justification.

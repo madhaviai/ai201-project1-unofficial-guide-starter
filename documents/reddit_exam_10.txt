@@ -1,0 +1,10 @@
+Source: Reddit r/college
+Course: Applied Algorithms
+Semester: Spring 2025
+Thread: TA review session notes
+
+TA said: "If you can't explain your algorithm in plain English, you don't understand it yet."
+
+Review session covered matrix chain multiplication and edit distance DP.
+
+Bring printed lecture notes — they reference specific slide numbers.

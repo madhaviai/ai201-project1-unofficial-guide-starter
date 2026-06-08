@@ -1,0 +1,18 @@
+Source: TA review sheet
+Course: CS 482
+Exam: Quiz 1 — Fall 2024
+
+Topics Covered:
+- Asymptotic notation
+- Master theorem basics
+- Simple recurrence analysis
+
+Most difficult question:
+Solve T(n) = 2T(n/2) + n log n.
+
+Common mistake:
+Applying Master theorem Case 1 incorrectly.
+
+Average score: 81%
+
+Low stakes — 10% of final grade.

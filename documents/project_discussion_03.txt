@@ -1,0 +1,11 @@
+Source: Discord #cs482-projects
+Project: AI Search Agent
+Semester: Spring 2025
+
+Hidden test cases include large mazes where naive BFS TLEs if you use wrong data structures.
+
+Use a queue for BFS, priority queue for A*.
+
+Don't modify the Node class fields — autograder checks object shape.
+
+Average project score last semester was 82/100.

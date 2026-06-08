@@ -1,0 +1,16 @@
+Source: RateMyProfessors
+Professor: Dr. Elena Chen
+Course: CS 482 Applied Algorithms
+Rating: 4.5/5
+
+Great professor but exams are tricky.
+
+Homework prepares you for the concepts but not necessarily the exact exam questions.
+
+Attendance is not graded.
+
+Lecture examples often appear on exams.
+
+Partial credit is generous if you explain your reasoning.
+
+Most students who attended lectures regularly earned B+ or higher.

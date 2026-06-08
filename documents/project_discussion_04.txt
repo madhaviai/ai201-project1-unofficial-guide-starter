@@ -1,0 +1,12 @@
+Source: Student Forum
+Project: AI Search Agent
+Course: CS 482
+Semester: Spring 2025
+
+Partners optional but most people work solo.
+
+If pairing, both names must be on the submission.
+
+Code similarity checker runs automatically — don't share full solutions.
+
+Comment your heuristic choice in the README file.

@@ -1,0 +1,10 @@
+Source: Reddit r/CS482
+Course: CS 482
+Semester: Fall 2024
+Thread: Graph traversal confusion
+
+Multiple people mixed up DFS tree edges vs back edges on the midterm.
+
+Know the difference between BFS shortest path in unweighted graphs vs Dijkstra in weighted graphs.
+
+The professor loves asking "why does this run in O(V+E)?" — cite the adjacency list traversal.

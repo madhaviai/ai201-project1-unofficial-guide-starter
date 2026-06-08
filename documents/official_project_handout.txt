@@ -1,0 +1,16 @@
+Source: Official project handout
+Course: CS 482 Applied Algorithms
+Assignment: AI Search Agent
+
+Due: Week 10, 11:59 PM local time.
+
+Requirements:
+Implement breadth-first search and A* search using the provided skeleton code.
+
+Do not modify provided function signatures or class names.
+
+Submit a ZIP containing search.py and README.md only.
+
+Autograder runs on every submission — maximum 20 submissions per day.
+
+Academic integrity: All code must be your own. No copying from prior semesters.

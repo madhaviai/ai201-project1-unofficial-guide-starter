@@ -1,0 +1,12 @@
+Source: Student Forum
+Project: AI Search Agent
+Course: CS 482 Applied Algorithms
+Semester: Fall 2024
+
+README must explain: BFS implementation, A* heuristic, known limitations.
+
+Missing README drops 10 points automatically per rubric.
+
+Demo video NOT required for project — only code + README.
+
+Average time spent: 15-20 hours for B+ quality submission.

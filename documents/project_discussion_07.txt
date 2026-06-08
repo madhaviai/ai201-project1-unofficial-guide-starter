@@ -1,0 +1,12 @@
+Source: Student Forum
+Project: AI Search Agent
+Course: CS 482
+Semester: Spring 2025
+
+A* must be admissible — inconsistent heuristics fail optimality tests.
+
+If your A* returns suboptimal paths, check heuristic overestimation.
+
+Project rubric: 40% correctness, 30% efficiency, 20% code style, 10% README.
+
+Efficiency tests time out slow implementations above O(n log n) per search.

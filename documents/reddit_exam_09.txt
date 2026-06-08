@@ -1,0 +1,10 @@
+Source: Reddit r/CS482
+Course: CS 482
+Semester: Fall 2024
+Thread: Time management on midterm
+
+Midterm was 75 minutes, 5 questions. Most people needed every minute.
+
+Do complexity analysis last on each question — it's quick points if you already solved the main part.
+
+Question 2 (BFS layering) was a time sink for people who didn't draw the graph first.

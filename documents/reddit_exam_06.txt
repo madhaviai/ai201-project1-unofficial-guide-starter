@@ -1,0 +1,12 @@
+Source: Reddit r/CS482
+Course: Applied Algorithms
+Semester: Spring 2025
+Thread: Dijkstra vs Bellman-Ford on exams
+
+Midterm question 3 tricked people: graph had negative edges so Dijkstra was wrong.
+
+Several students used Dijkstra anyway and lost most of the points.
+
+Always check edge weights before picking an algorithm.
+
+Write "negative edge detected — using Bellman-Ford" in your answer for easy partial credit.

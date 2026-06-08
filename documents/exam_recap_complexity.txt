@@ -1,0 +1,17 @@
+Source: Student notes
+Course: Applied Algorithms
+Focus: Complexity analysis on exams
+
+Topics Covered:
+- Big-O, Big-Theta
+- Analyzing loops and recursive calls
+- Amortized basics (union-find mentioned in lecture)
+
+Most difficult question:
+Analyze nested loop graph algorithm with adjacency matrix vs list.
+
+Common mistake:
+Stating O(V^2) when adjacency list gives O(V+E).
+
+Grader note from forum:
+"Show your work — wrong final complexity with correct reasoning gets partial credit.

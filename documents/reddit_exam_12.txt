@@ -1,0 +1,10 @@
+Source: Reddit r/CS482
+Course: Applied Algorithms
+Semester: Spring 2025
+Thread: Open book?
+
+Exams are closed book, closed notes, no calculators.
+
+You CAN use one handwritten cheat sheet (both sides, 8.5x11).
+
+Put algorithm templates on the sheet but also the conditions when each applies.

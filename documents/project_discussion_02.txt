@@ -1,0 +1,12 @@
+Source: Student Forum
+Project: AI Search Agent
+Course: CS 482
+Semester: Fall 2024
+
+Start early — the heuristic function for A* trips people up.
+
+Manhattan distance works for grid worlds but not for all test maps.
+
+Read the FAQ: tie-breaking matters for grading.
+
+Late submissions lose 10% per day up to 3 days.

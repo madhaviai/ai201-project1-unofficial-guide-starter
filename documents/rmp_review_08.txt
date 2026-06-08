@@ -1,0 +1,12 @@
+Source: RateMyProfessors
+Professor: Dr. Elena Chen
+Course: CS 482
+Rating: 4/5
+
+Structured course. Syllabus matches what actually happens.
+
+Lecture slides posted same day.
+
+Exam questions often mirror in-class examples with small twists.
+
+Partial credit saved me on the DP midterm question.

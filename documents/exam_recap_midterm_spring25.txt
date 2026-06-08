@@ -1,0 +1,16 @@
+Source: Unofficial recap thread
+Course: Applied Algorithms
+Exam: Midterm — Spring 2025
+
+Topics Covered:
+- BFS/DFS applications
+- Dijkstra (non-negative weights only)
+- Basic DP (knapsack, LCS)
+
+Most difficult question:
+Graph modeling — reduce word ladder to BFS.
+
+Common mistake:
+Using Dijkstra on unweighted graph (overcomplicated, sometimes wrong tie-breaking).
+
+Average score: 76%

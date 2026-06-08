@@ -1,0 +1,12 @@
+Source: RateMyProfessors
+Professor: Dr. Elena Chen
+Course: Applied Algorithms
+Rating: 4/5
+
+Graph unit was my favorite. Dijkstra lecture was crystal clear.
+
+Warning: negative edge question on exams — read carefully.
+
+She values correctness proofs over memorizing pseudocode.
+
+Respond on Piazza within 24 hours usually.

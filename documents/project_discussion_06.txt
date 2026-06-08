@@ -1,0 +1,11 @@
+Source: Discord #cs482-projects
+Project: AI Search Agent
+Semester: Fall 2024
+
+Office hours tip: bring your failing test case name from the autograder log.
+
+TA won't debug your whole project but will hint at edge cases.
+
+Extended deadline only for documented emergencies — not "I started late."
+
+Submit zip exactly as specified in the handout.

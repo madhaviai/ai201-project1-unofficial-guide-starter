@@ -1,0 +1,15 @@
+Source: Student study guide
+Course: CS 482
+Exam: Final — Spring 2025 (anticipated topics from review session)
+
+Topics Covered:
+- Cumulative: graphs, shortest paths, DP, greedy vs DP comparison
+- Proof sketches
+
+Most difficult anticipated topic:
+Proof that a given greedy algorithm is correct OR counterexample.
+
+Common predicted mistake:
+Skipping induction step in greedy proof.
+
+Review session attendance: ~120 students.

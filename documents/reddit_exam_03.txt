@@ -1,0 +1,12 @@
+Source: Reddit r/college
+Course: CS 482 Applied Algorithms
+Semester: Spring 2025
+Thread: How to study for DP
+
+Don't memorize templates — understand state definition first.
+
+The professor deducts heavily when you jump straight to code without defining dp[i] or whatever your state is.
+
+Office hours the week before the midterm were packed. Go early if you want one-on-one time.
+
+Homework 4 (interval scheduling DP) was basically a mini practice exam.

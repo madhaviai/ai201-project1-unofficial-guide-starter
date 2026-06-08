@@ -1,0 +1,12 @@
+Source: RateMyProfessors
+Professor: Dr. Elena Chen
+Course: Applied Algorithms
+Rating: 3.5/5
+
+Brilliant but expects a lot. Homework is weekly and time-consuming.
+
+Midterm average is usually around low 70s — don't panic if you feel lost.
+
+She deducts points when students skip complexity analysis.
+
+Best algorithms class I've taken if you put in effort.

@@ -1,0 +1,10 @@
+Source: Reddit r/CS482
+Course: Applied Algorithms
+Semester: Spring 2025
+Thread: Homework vs exam difficulty
+
+Homework prepares you for concepts but NOT exact exam question formats.
+
+Exams are more proof-heavy and less "implement this function" than homework.
+
+The autograder on homework is forgiving; the human grader on exams is not.

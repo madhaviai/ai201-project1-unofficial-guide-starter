@@ -1,0 +1,12 @@
+Source: RateMyProfessors
+Professor: Dr. Elena Chen
+Course: CS 482 Applied Algorithms
+Rating: 4.5/5
+
+Transformative class for interview prep.
+
+Dynamic programming grading emphasizes state definition and recurrence justification.
+
+If you only write code without explanation you will lose points.
+
+Highly recommend if you're serious about algorithms.

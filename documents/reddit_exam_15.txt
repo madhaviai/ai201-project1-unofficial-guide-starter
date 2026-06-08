@@ -1,0 +1,10 @@
+Source: Reddit r/CS482
+Course: CS 482
+Semester: Fall 2024
+Thread: Office hours pro tip
+
+Professor Chen walks through YOUR wrong answer if you bring it to office hours.
+
+Don't just ask "what's on the exam" — they won't tell you.
+
+Ask "is my recurrence relation for this problem valid?" — that's fair game and super helpful.

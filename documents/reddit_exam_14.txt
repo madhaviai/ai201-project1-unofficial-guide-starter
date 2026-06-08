@@ -1,0 +1,10 @@
+Source: Reddit r/CS482
+Course: Applied Algorithms
+Semester: Spring 2025
+Thread: Greedy vs DP trap
+
+Exam question looked greedy (activity selection) but needed DP because of a modified cost function.
+
+Classic mistake: assume greedy works because it worked on homework.
+
+Always try a counterexample before committing to greedy on an exam.

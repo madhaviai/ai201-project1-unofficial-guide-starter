@@ -1,0 +1,10 @@
+Source: Reddit r/gradadmissions
+Course: CS 482
+Semester: Fall 2024
+Thread: Is this class curved?
+
+The syllabus says "grades may be adjusted at instructor discretion" but there is no fixed curve.
+
+Fall 2024 midterm average was 74%. People above 85 did fine.
+
+Focus on understanding proofs — the top students said the hardest part was justifying correctness, not coding.

@@ -1,0 +1,14 @@
+Source: Student Forum (Piazza export)
+Project: AI Search Agent
+Course: CS 482 Applied Algorithms
+Semester: Fall 2024
+
+The autograder is extremely strict.
+
+Do not rename any methods in the provided skeleton.
+
+Several students failed hidden tests because they changed the function signatures.
+
+The TA said helper functions are allowed.
+
+Breadth-first search and A* search should match the expected output format exactly.

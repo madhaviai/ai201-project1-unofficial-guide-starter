@@ -1,0 +1,10 @@
+Source: Reddit r/college
+Course: CS 482
+Semester: Fall 2024
+Thread: Attendance worth it?
+
+Attendance is NOT graded in CS 482.
+
+But lecture examples show up on exams almost every semester according to older threads.
+
+I skipped half the lectures and regretted it after the midterm graph question matched slide 47 exactly.

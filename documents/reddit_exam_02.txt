@@ -1,0 +1,12 @@
+Source: Reddit r/CS482
+Course: Applied Algorithms
+Semester: Fall 2024
+Thread: Final exam predictions
+
+People keep asking if the final will be cumulative. Yes — every TA post says the final covers all modules.
+
+Expect at least one graph problem and one DP problem again.
+
+Last year's final had a knapsack variant and a shortest-path with negative edges (Bellman-Ford).
+
+Study the lecture slide proofs, not just the textbook end-of-chapter summaries.

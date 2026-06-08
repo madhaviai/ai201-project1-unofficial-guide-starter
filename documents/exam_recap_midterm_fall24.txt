@@ -1,0 +1,20 @@
+Source: Student study guide (unofficial)
+Course: CS 482 Applied Algorithms
+Exam: Midterm — Fall 2024
+
+Topics Covered:
+- Graph Traversal (BFS, DFS)
+- Dijkstra's Algorithm
+- Dynamic Programming
+- Complexity Analysis
+
+Most difficult question:
+Dynamic programming optimization problem (weighted interval scheduling variant).
+
+Common mistake:
+Using greedy reasoning when a DP solution was required.
+
+Average score: 74%
+
+Grading emphasis:
+Correctness explanation and O-notation on every algorithm question.

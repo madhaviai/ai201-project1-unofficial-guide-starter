@@ -1,0 +1,10 @@
+Source: Reddit r/college
+Course: CS 482 Applied Algorithms
+Semester: Fall 2024
+Thread: Retake advice
+
+Failed the midterm with a 58. Final + homework recovery is possible if you fix your study approach.
+
+Stop watching summary videos — redo homework problems from scratch without looking at solutions.
+
+The professor allows one optional redo problem set before the final (check Piazza).

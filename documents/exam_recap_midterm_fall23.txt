@@ -1,0 +1,18 @@
+Source: Archive (student uploaded)
+Course: CS 482 Applied Algorithms
+Exam: Midterm — Fall 2023
+
+Topics Covered:
+- Graph representations
+- Topological sort
+- Intro DP
+
+Most difficult question:
+Longest increasing subsequence DP.
+
+Common mistake:
+O(n^2) DP written but student claimed O(n log n) without justification.
+
+Average score: 69%
+
+Historical note: Fall 2023 had optional group exam review.

@@ -1,0 +1,17 @@
+Source: Student Forum compilation
+Course: CS 482
+Focus: Greedy vs DP decision problems
+
+Topics Covered:
+- Activity selection (greedy works)
+- Weighted interval scheduling (DP required)
+- Coin change (depends on coin set)
+
+Most difficult question:
+Explain why greedy fails with specific counterexample.
+
+Common mistake:
+Asserting greedy works without proof.
+
+Exam tip:
+If problem has weights or dependencies between choices, suspect DP first.

@@ -1,0 +1,14 @@
+Source: Official grading rubric (instructor posted on LMS)
+Course: CS 482 Applied Algorithms
+Component: Dynamic Programming exam questions
+
+Rubric (15 points typical):
+- State definition: 3 points
+- Recurrence relation: 4 points
+- Base cases: 2 points
+- Correctness explanation: 3 points
+- Complexity analysis: 2 points
+- Correct final answer: 1 point (often partial credit without full justification)
+
+Instructor note:
+"A correct number with no work earns at most 1-2 points.

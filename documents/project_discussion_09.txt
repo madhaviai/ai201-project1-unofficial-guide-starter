@@ -1,0 +1,11 @@
+Source: Discord #cs482-projects
+Project: AI Search Agent
+Semester: Spring 2025
+
+Milestone 1 (BFS only) due week 8 — don't wait until week 10 for full A*.
+
+Incremental grading releases partial autograder results.
+
+Students who finished BFS early had easier time tuning A* heuristics.
+
+Peer study groups helped but copy-paste gets academic integrity referrals.

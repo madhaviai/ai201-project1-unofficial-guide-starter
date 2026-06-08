@@ -1,0 +1,12 @@
+Source: RateMyProfessors
+Professor: Dr. Elena Chen
+Course: CS 482
+Rating: 3/5
+
+Heavy workload. Start the search agent project early.
+
+Autograder on projects is strict — follow the skeleton exactly.
+
+Exams aren't impossible but harder than homework suggests.
+
+Office hours get crowded before midterms.

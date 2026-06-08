@@ -1,0 +1,11 @@
+Source: Student Forum
+Project: AI Search Agent
+Semester: Fall 2024
+
+Don't use external pathfinding libraries — instant zero.
+
+Standard library collections only (heapq, deque, etc.).
+
+Skeleton provides SearchProblem interface — implement search(), not main().
+
+Previous semester someone got 0 for submitting a Jupyter notebook instead of .py files.

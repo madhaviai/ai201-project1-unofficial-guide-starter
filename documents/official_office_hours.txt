@@ -1,0 +1,14 @@
+Source: Official course website
+Course: CS 482 Applied Algorithms
+Instructor: Dr. Elena Chen
+
+Office hours:
+Tuesday 2-4 PM, Room 301 CS Building
+Thursday 10-11 AM, Room 301 CS Building
+
+TA lab hours:
+Wednesday 5-7 PM, Online (Zoom link on LMS)
+
+Policy:
+Office hours are for understanding concepts and reviewing your attempted solutions.
+Instructors will not pre-approve exam answers or reveal exam content.
